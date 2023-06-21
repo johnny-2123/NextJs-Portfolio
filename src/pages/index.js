@@ -1,6 +1,7 @@
+import Link from 'next/link'
 import Head from 'next/head'
 import Layout from '@/components/Layout'
-import { J } from '@/components/Icons'
+import { J, LinkArrow } from '@/components/Icons'
 import AnimatedText from '@/components/AnimatedText'
 export default function Home() {
   return (
@@ -21,12 +22,22 @@ export default function Home() {
               <p className='my-4 text-base font-medium'>
                 As a versatile full-stack developer, I thrive on breathing life into ideas through the medium of web applications. Browse my selection of projects that showcase my proficiency in React.js and the wider field of web development.
               </p>
-              <div>
+              <div className='flex items-center self-start mt-2'>
+                <Link href="/Avila_Johnny_Resume.pdf "
+                  target={'_blank'}
+                  className={`flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark border-2`
+                  }
+                  download={true}
+
+                >Resume <LinkArrow className={`w-6 ml-1`} /> </Link>
+                <Link href='mailto:avila.johnny11@gmail.com'
+                  className={`ml-4 text-lg font-medium capitalize text-dark underline `}
+                >Contact</Link>
               </div>
             </div>
           </div>
         </Layout>
-      </main>
+      </main >
     </>
   )
 }
