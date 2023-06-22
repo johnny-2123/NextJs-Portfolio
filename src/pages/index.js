@@ -1,8 +1,11 @@
 import Link from 'next/link'
 import Head from 'next/head'
+import Image from 'next/image';
 import Layout from '@/components/Layout'
 import { J, LinkArrow } from '@/components/Icons'
 import AnimatedText from '@/components/AnimatedText'
+import HireMe from '@/components/HireMe'
+import lightBulb from '../../public/images/svgs/miscellaneous_icons_1.svg'
 export default function Home() {
   return (
     <>
@@ -37,6 +40,10 @@ export default function Home() {
             </div>
           </div>
         </Layout>
+        <HireMe />
+        <div className='absolute right-8 bottom-8 inline-block w-24'>
+          <Image src={lightBulb} className='w-full h-auto' />
+        </div>
       </main >
     </>
   )
