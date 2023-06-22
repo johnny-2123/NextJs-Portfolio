@@ -5,6 +5,7 @@ import Layout from "@/components/Layout";
 import AnimatedText from "@/components/AnimatedText";
 import headshot from "public/images/profile/headshot red sweater.jpg"
 import Skills from "@/components/skills";
+import Experience from "@/components/Experience";
 
 const About = () => {
 
@@ -38,6 +39,7 @@ const About = () => {
                         </div>
                     </div>
                     <Skills />
+                    <Experience />
                 </Layout>
             </main>
         </>
