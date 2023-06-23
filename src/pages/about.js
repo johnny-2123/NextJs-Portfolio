@@ -49,7 +49,12 @@ const About = () => {
             </div>
             <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 md:order-first">
               <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark"></div>
-              <Image src={headshot} className={`w-full h-auto rounded-2xl`} />
+              <Image
+                src={headshot}
+                className={`w-full h-auto rounded-2xl`}
+                priority={true}
+                sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+              />
             </div>
           </div>
           <Skills />

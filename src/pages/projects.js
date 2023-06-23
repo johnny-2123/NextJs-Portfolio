@@ -20,7 +20,13 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
         target={"_blank"}
         className="w-3/5 cursor-pointer overflow-hidden rounded-xl "
       >
-        <Image src={img} alt={title} className="w-full h-auto" />
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          priority={true}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
       </Link>
       <div className="w-2/5 flex flex-col items-start justify-between pl-6 ">
         {/* <span className="text-primary font-medium text-xl">{type}</span> */}
@@ -87,7 +93,7 @@ const Project = ({ title, type, img, link, github, summary }) => {
 
 const Projects = () => {
   return (
-    <div className="pt-0 mt-0">
+    <>
       <Head>
         <title>Johnny | Projects Page</title>
         <meta name="description" content="any description" />
@@ -144,7 +150,7 @@ const Projects = () => {
           </div>
         </Layout>
       </main>
-    </div>
+    </>
   );
 };
 
