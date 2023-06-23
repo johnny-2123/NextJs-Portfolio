@@ -27,7 +27,7 @@ const About = () => {
                 Biography
               </h2>
               <p className="mb-4 font-medium">
-                Hello, I'm Johnny Avila, a versatile software engineer who
+                Hello, I&apos;m Johnny Avila, a versatile software engineer who
                 transforms ideas into innovative, user-centric applications. My
                 expertise in JavaScript, Python, and other front-end and
                 back-end technologies has allowed me to create everything from
@@ -42,9 +42,9 @@ const About = () => {
                 digital sphere.
               </p>
               <p className="font-medium">
-                I'm excited to bring my dynamic skill set to your next project,
-                pushing the boundaries of what's possible, and bringing your
-                vision to life.
+                I&apos;m excited to bring my dynamic skill set to your next
+                project, pushing the boundaries of what&apos;s possible, and
+                bringing your vision to life.
               </p>
             </div>
 
