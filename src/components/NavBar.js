@@ -151,7 +151,7 @@ const navBar = () => {
             >
               <GithubIcon />
             </motion.a>
-            <motion.a
+            {/* <motion.a
               href="/"
               target={"_blank"}
               whileHover={{ y: -2 }}
@@ -159,7 +159,7 @@ const navBar = () => {
               className="w-6 mx-3 sm:mx-1 "
             >
               <DribbbleIcon />
-            </motion.a>
+            </motion.a> */}
           </nav>
         </motion.div>
       ) : null}

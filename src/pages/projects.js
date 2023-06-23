@@ -13,12 +13,12 @@ import { GithubIcon } from "@/components/Icons";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl"></div>
+    <article className="w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 ">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]"></div>
       <Link
         href={link}
         target={"_blank"}
-        className="w-3/5 cursor-pointer overflow-hidden rounded-xl "
+        className="w-3/5 cursor-pointer overflow-hidden rounded-xl lg:w-full"
       >
         <Image
           src={img}
@@ -28,23 +28,25 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </Link>
-      <div className="w-2/5 flex flex-col items-start justify-between pl-6 ">
+      <div className="w-2/5 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
         {/* <span className="text-primary font-medium text-xl">{type}</span> */}
         <Link
           href={link}
           target={"_blank"}
           className="hover:underline underline-offset-[.2rem]"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-md">
+            {title}
+          </h2>
         </Link>
-        <p className="my-2 ">{summary}</p>
+        <p className="my-2 dark:text-light sm:text-sm">{summary}</p>
         <div className="mt-2 flex items-center">
           <Link href={github} target={"_blank"} className="w-10">
             <GithubIcon />
           </Link>
           <Link
             href={link}
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-large font-semibold"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-large font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
           >
             Live Site
           </Link>
@@ -56,8 +58,8 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github, summary }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark rounded-br-3xl"></div>
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-3 md:w-[101%] sm:h-[102%] xs:rounded-[1.5rem] "></div>
       <Link
         href={link}
         target={"_blank"}
@@ -66,22 +68,26 @@ const Project = ({ title, type, img, link, github, summary }) => {
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl">{type}</span>
+        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base  ">
+          {type}
+        </span>
         <Link
           href={link}
           target={"_blank"}
           className="hover:underline underline-offset-[.2rem]"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold">{title}</h2>
+          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl ">
+            {title}
+          </h2>
         </Link>
         <p className="my-2 ">{summary}</p>
         <div className="mt-2 flex items-center">
-          <Link href={github} target={"_blank"} className="w-8">
+          <Link href={github} target={"_blank"} className="w-8 md:w-6">
             <GithubIcon />
           </Link>
           <Link
             href={link}
-            className="ml-4 rounded-lg  text-lg font-semibold underline underline-offset-[.2rem]"
+            className="ml-4 rounded-lg  text-lg font-semibold underline underline-offset-[.2rem] md:text-base"
           >
             Live Site
           </Link>
@@ -101,11 +107,11 @@ const Projects = () => {
       <main className="w-full mb-16 flex flex-col items-center justify-center">
         <Layout className="pt-[4rem] ">
           <AnimatedText
-            className="mb-[4rem]"
+            className="mb-[4rem] lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!test-4xl"
             text={"Coding is the art of ideas brought to life."}
           />
 
-          <div className="grid grid-cols-12 gap-24 gap-y-32">
+          <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
                 title={"Wavelength"}
