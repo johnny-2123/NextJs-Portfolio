@@ -122,7 +122,6 @@ const Projects = () => {
                 img={wavelength}
               />
             </div>
-
             <div className="col-span-12">
               <FeaturedProject
                 title={"Crim Search"}

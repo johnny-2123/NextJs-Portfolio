@@ -84,7 +84,7 @@ const NavBar = () => {
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
           <CustomLink href="/projects" title="Projects" className="mx-4" />
-          <CustomLink href="/contact" title="Contact" className="ml-4" />
+          {/* <CustomLink href="/contact" title="Contact" className="ml-4" /> */}
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
@@ -92,11 +92,11 @@ const NavBar = () => {
             target={"_blank"}
             whileHover={{ y: -2 }}
             whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3"
+            className="w-6 ml-3"
           >
             <GithubIcon />{" "}
           </motion.a>
-          <motion.a
+          {/* <motion.a
             href="/"
             target={"_blank"}
             whileHover={{ y: -2 }}
@@ -104,7 +104,7 @@ const NavBar = () => {
             className="w-6 mx-3"
           >
             <DribbbleIcon />{" "}
-          </motion.a>
+          </motion.a> */}
         </nav>
       </div>
 
@@ -134,12 +134,6 @@ const NavBar = () => {
               className=""
               toggle={handleClick}
             />
-            <CustomMobileLink
-              href="/contact"
-              title="Contact"
-              className=""
-              toggle={handleClick}
-            />
           </nav>
           <nav className="flex items-center justify-center flex-wrap mt-2">
             <motion.a
@@ -151,15 +145,6 @@ const NavBar = () => {
             >
               <GithubIcon />
             </motion.a>
-            {/* <motion.a
-              href="/"
-              target={"_blank"}
-              whileHover={{ y: -2 }}
-              whileTap={{ scale: 0.9 }}
-              className="w-6 mx-3 sm:mx-1 "
-            >
-              <DribbbleIcon />
-            </motion.a> */}
           </nav>
         </motion.div>
       ) : null}

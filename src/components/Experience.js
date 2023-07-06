@@ -7,7 +7,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
 
   const resumeBullets = work.map((bullet, index) => {
     return (
-      <li key={index} className="font-medium list-disc pl4">
+      <li key={index} className="font-medium list-disc pl-4">
         {bullet}
       </li>
     );
@@ -16,7 +16,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-o last:mb-0 w-[60%] mx-auto flex flex-col items-center justify-between"
+      className="my-8 first:mt-0 last:mb-0 w-4/5 mx-auto flex flex-col items-start justify-between"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -24,7 +24,7 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl">
+        <h3 className="capitalize font-bold text-2xl w-full ml-3">
           {position}&nbsp;
           <a
             href={companyLink}
@@ -34,10 +34,10 @@ const Details = ({ position, company, companyLink, time, address, work }) => {
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75">
+        <span className="capitalize font-medium text-dark/75 ml-3">
           {address && `${time} | ${address}`}
         </span>
-        <ul className="font-medium w-full">{resumeBullets}</ul>
+        <ul className="font-medium w-full ml-8 mt-2">{resumeBullets}</ul>
       </motion.div>
     </li>
   );
@@ -52,8 +52,7 @@ const Experience = () => {
 
   return (
     <div className="my-[10rem]">
-      <h2 className="font-bold text-8xl mb-32 w-full text-center">
-        {" "}
+      <h2 className="font-bold text-8xl sm:text-5xl mb-32 w-full text-center">
         Experience
       </h2>
       <div ref={ref} className="w-[100%] mx-auto relative">
