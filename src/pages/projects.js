@@ -8,6 +8,7 @@ import wavelength from "../../public/images/projects/Wavelength_Cover.png";
 import slack from "../../public/images/projects/slack_clone_cover.png";
 import crim_search from "../../public/images/projects/crim_search_cover.png";
 import meetup from "../../public/images/projects/meetup_cover.png";
+import quoted from "../../public/images/projects/Quoted_Cover.png";
 import { motion } from "framer-motion";
 import { GithubIcon } from "@/components/Icons";
 
@@ -110,7 +111,6 @@ const Projects = () => {
             className="mb-[4rem] lg:!text-7xl sm:mb-8 sm:!text-6xl xs:!test-4xl"
             text={"Coding is the art of ideas brought to life."}
           />
-
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <FeaturedProject
@@ -120,6 +120,16 @@ const Projects = () => {
                 github={`https://github.com/johnny-2123/Wavelength`}
                 type={`Feautured Project`}
                 img={wavelength}
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
+                title={"Quoted"}
+                summary={`Quoted is a web application that allows users to share and discover quotes. Powered by Next.js, Tailwind CSS and Firebase, users can create, edit, delete, quotes. Users can also like quotes and follow their favorite quote creators.`}
+                link={`https://quoted-phi.vercel.app/`}
+                github={`https://github.com/johnny-2123/Quoted`}
+                type={`Feautured Project`}
+                img={quoted}
               />
             </div>
             <div className="col-span-12">
