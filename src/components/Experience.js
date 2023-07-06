@@ -74,6 +74,16 @@ const Experience = () => {
           />
           <Details
             position={"Software Engineering Project"}
+            company={"Quoted"}
+            companyLink={"https://quoted-phi.vercel.app/"}
+            work={[
+              `Implemented a NoSQL database using firestore to store user and quote data.`,
+              `Utilized Next.js and Tailwind CSS to build a responsive UI.`,
+              "Leveraged firebase cloud storage to store user profile images.",
+            ]}
+          />
+          <Details
+            position={"Software Engineering Project"}
             company={"Crim Search"}
             companyLink={
               "https://chrome.google.com/webstore/detail/crim-search/jofkolbgfgfpjdfcjhjefefbnidoamcd?hl=en&authuser=2"
