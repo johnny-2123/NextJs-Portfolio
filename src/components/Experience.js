@@ -77,7 +77,7 @@ const Experience = () => {
             company={"Quoted"}
             companyLink={"https://quoted-phi.vercel.app/"}
             work={[
-              `Implemented a NoSQL database using firestore to store user and quote data.`,
+              `Implemented a NoSQL database using firestore to manage user and quote data.`,
               `Utilized Next.js and Tailwind CSS to build a responsive UI.`,
               "Leveraged firebase cloud storage to store user profile images.",
             ]}
