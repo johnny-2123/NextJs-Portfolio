@@ -33,7 +33,7 @@ const Skills = () => {
         <Skill name="Git" x="0vw" y="-21vw" />
         <Skill name="JavaScript" x="-22vw" y="18vw" />
         <Skill name="PythonCSS" x="26vw" y="18vw" />
-        <Skill name="Firestore" x="1vw" y="27vw" />
+        <Skill name="Firestore" x="1vw" y="23vw" />
         <Skill name="Next.js" x="-7vw" y="6vw" />
         <Skill name="Tailwind CSS" x="9vw" y="-4vw" />
         <Skill name="NoSQL" x="-22vw" y="-6vw" />
