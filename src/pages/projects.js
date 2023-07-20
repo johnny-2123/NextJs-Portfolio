@@ -136,8 +136,8 @@ const Projects = () => {
               <FeaturedProject
                 title={"Crim Search"}
                 summary={`A paralegal-focused Chrome Extension that optimizes criminal history chart creation, reducing time by 50%. Extracts criminal case data for MD, DC, and VA, utilizing Chrome local storage and messaging system for efficient data management.`}
-                link={`https://aaslackcloneproject.onrender.com/`}
-                github={`https://chrome.google.com/webstore/detail/crim-search/jofkolbgfgfpjdfcjhjefefbnidoamcd?hl=en&authuser=2`}
+                link={`https://chrome.google.com/webstore/detail/crim-search/jofkolbgfgfpjdfcjhjefefbnidoamcd?hl=en&authuser=2`}
+                github={`https://github.com/johnny-2123/Crim-Search-Extension`}
                 type={`Feautured Project`}
                 img={crim_search}
               />
