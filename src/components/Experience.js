@@ -84,6 +84,16 @@ const Experience = () => {
           />
           <Details
             position={"Software Engineering Project"}
+            company={"Meetup Clone"}
+            companyLink={"https://meetupclone-ndtq.onrender.com/"}
+            work={[
+              `Developed RESTful APIs using Node.js and Express.js.`,
+              `Ensured authentication and authorization for membership-related actions.`,
+              `Built responsive UI components using React and CSS.`,
+            ]}
+          />
+          <Details
+            position={"Software Engineering Project"}
             company={"Crim Search"}
             companyLink={
               "https://chrome.google.com/webstore/detail/crim-search/jofkolbgfgfpjdfcjhjefefbnidoamcd?hl=en&authuser=2"
@@ -97,23 +107,12 @@ const Experience = () => {
           <Details
             position={"Software Engineering Project"}
             company={"Slack Clone "}
-            companyLink={"https://www.caircoalition.org/"}
+            companyLink={"https://aaslackcloneproject.onrender.com/"}
             work={[
               `DRY'ed up backend code by using polymorphic inheritance for channels and direct messages.
 `,
               `Implemented real-time chat message functionality using SocketIO, enabling instant messaging and efficient communication between users.`,
               `Configured relational database schema using Flask and SQLAlchemy, leveraging the power of PostgreSQL for efficient data storage and retrieval.`,
-            ]}
-          />
-
-          <Details
-            position={"Software Engineering Project"}
-            company={"Meetup Clone"}
-            companyLink={"https://meetupclone-ndtq.onrender.com/"}
-            work={[
-              `Developed RESTful APIs using Node.js and Express.js.`,
-              `Ensured authentication and authorization for membership-related actions.`,
-              `Built responsive UI components using React and CSS.`,
             ]}
           />
           <Details

@@ -134,6 +134,16 @@ const Projects = () => {
             </div>
             <div className="col-span-12">
               <FeaturedProject
+                title={"Meetup Clone"}
+                summary={`Meetup Clone is a web application that allows users to join groups and attend events based on shared interests. Developed using JavaScript, React, Redux, Sequelize, HTML5, CSS3, Node.js, Express.js, and Render. `}
+                link={`https://meetupclone-ndtq.onrender.com/`}
+                github={`https://github.com/johnny-2123/Meetup_Clone`}
+                type={`Feautured Project`}
+                img={meetup}
+              />
+            </div>
+            <div className="col-span-12">
+              <FeaturedProject
                 title={"Crim Search"}
                 summary={`A paralegal-focused Chrome Extension that optimizes criminal history chart creation, reducing time by 50%. Extracts criminal case data for MD, DC, and VA, utilizing Chrome local storage and messaging system for efficient data management.`}
                 link={`https://chrome.google.com/webstore/detail/crim-search/jofkolbgfgfpjdfcjhjefefbnidoamcd?hl=en&authuser=2`}
@@ -150,16 +160,6 @@ const Projects = () => {
                 github={`https://github.com/johnny-2123/Slack_Clone`}
                 type={`Feautured Project`}
                 img={slack}
-              />
-            </div>
-            <div className="col-span-12">
-              <FeaturedProject
-                title={"Meetup Clone"}
-                summary={`Meetup Clone is a web application that allows users to join groups and attend events based on shared interests. Developed using JavaScript, React, Redux, Sequelize, HTML5, CSS3, Node.js, Express.js, and Render. `}
-                link={`https://meetupclone-ndtq.onrender.com/`}
-                github={`https://github.com/johnny-2123/Meetup_Clone`}
-                type={`Feautured Project`}
-                img={meetup}
               />
             </div>
           </div>
