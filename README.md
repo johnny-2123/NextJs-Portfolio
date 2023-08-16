@@ -24,7 +24,3 @@ To see the live portfolio, check out the folowing link👇: <br />
 - [framer-motion](https://www.framer.com/motion/) <br />
 - [Tailwind css](https://tailwindcss.com/) <br />
 
-
-# NextJs-Portfolio
-# NextJs-Portfolio
-# NextJs-Portfolio
