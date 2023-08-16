@@ -5,9 +5,9 @@ To see the live portfolio, check out the folowing link👇: <br />
 
 
 ### Images of The Portfolio Website:
-<img width="1920" alt="image" src="https://github.com/johnny-2123/NextJs-Portfolio/assets/95261336/bfccc112-663b-4dfa-aacc-1b157e4d0919">
-<img width="1920" alt="image" src="https://github.com/johnny-2123/NextJs-Portfolio/assets/95261336/009296cc-0f7e-44c3-b162-8eac60ef3114">
-<img width="1920" alt="image" src="https://github.com/johnny-2123/NextJs-Portfolio/assets/95261336/e4b8e870-4e34-42fb-9574-90803824cf40">
+<img width="946" alt="image" src="https://github.com/johnny-2123/NextJs-Portfolio/assets/95261336/101b3871-d517-4e6a-8695-7e20c3ffbe08">
+<img width="945" alt="image" src="https://github.com/johnny-2123/NextJs-Portfolio/assets/95261336/92389f99-1d89-4bdc-9454-a74eb22960a9">
+<img width="945" alt="image" src="https://github.com/johnny-2123/NextJs-Portfolio/assets/95261336/600efe47-e5f3-4489-bf91-a4d31f298034">
 
 
 ### Resources Used in This Project
