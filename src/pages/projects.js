@@ -14,7 +14,7 @@ import { GithubIcon } from "@/components/Icons";
 
 const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   return (
-    <article className="w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative dark:bg-dark dark:border-light lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 ">
+    <article className="w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative  lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 ">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]"></div>
       <Link
         href={link}
@@ -36,18 +36,18 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           target={"_blank"}
           className="hover:underline underline-offset-[.2rem]"
         >
-          <h2 className="my-2 w-full text-left text-4xl font-bold dark:text-light sm:text-md">
+          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-md">
             {title}
           </h2>
         </Link>
-        <p className="my-2 dark:text-light sm:text-sm">{summary}</p>
+        <p className="my-2 sm:text-sm">{summary}</p>
         <div className="mt-2 flex items-center">
           <Link href={github} target={"_blank"} className="w-10">
             <GithubIcon />
           </Link>
           <Link
             href={link}
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-large font-semibold dark:bg-light dark:text-dark sm:px-4 sm:text-base"
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-large font-semibold sm:px-4 sm:text-base"
           >
             Live Site
           </Link>
@@ -59,7 +59,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
 
 const Project = ({ title, type, img, link, github, summary }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative dark:bg-dark dark:border-light xs:p-4">
+    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative xs:p-4">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-3 md:w-[101%] sm:h-[102%] xs:rounded-[1.5rem] "></div>
       <Link
         href={link}
@@ -69,7 +69,7 @@ const Project = ({ title, type, img, link, github, summary }) => {
         <Image src={img} alt={title} className="w-full h-auto" />
       </Link>
       <div className="w-full flex flex-col items-start justify-between mt-4">
-        <span className="text-primary font-medium text-xl dark:text-primaryDark lg:text-lg md:text-base  ">
+        <span className="text-primary font-medium text-xl lg:text-lg md:text-base  ">
           {type}
         </span>
         <Link

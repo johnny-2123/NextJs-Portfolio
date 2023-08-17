@@ -15,7 +15,7 @@ const About = () => {
         <title>Johnny | About Page</title>
         <meta name="description" content="any description" />
       </Head>
-      <main className="flex w-full flex-col items-center justify-center dark:text-light">
+      <main className="flex w-full flex-col items-center justify-center">
         <Layout className="pt-16">
           <AnimatedText
             text="Coding with passion, building with purpose"
@@ -23,7 +23,7 @@ const About = () => {
           />
           <div className="grid w-full grid-cols-8 gap-16 sm:gap-8 ">
             <div className="col-span-5 flex flex-col items-start justify-start xl:col-span-4 md:col-span-8 md:order-2">
-              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75 dark:text-light/75">
+              <h2 className="mb-4 text-lg font-bold uppercase text-dark/75">
                 Biography
               </h2>
               <p className="mb-4 font-medium">
@@ -48,8 +48,8 @@ const About = () => {
               </p>
             </div>
 
-            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 dark:border-light xl:col-span-4 md:col-span-8 md:order-1 ">
-              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark dark:bg-light "></div>
+            <div className="col-span-3 relative h-max rounded-2xl border-2 border-solid border-dark bg-light p-8 xl:col-span-4 md:col-span-8 md:order-1 ">
+              <div className="absolute top-0 -right-3 -z-10 w-[102%] h-[103%] rounded-[2rem] bg-dark  "></div>
               <Image
                 src={headshot}
                 className="w-full h-auto rounded-2xl"
