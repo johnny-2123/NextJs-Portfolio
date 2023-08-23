@@ -49,6 +49,7 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
           </Link>
           <Link
             href={link}
+            target={"_blank"}
             className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-large font-semibold sm:px-4 sm:text-base"
           >
             Live Site
@@ -150,7 +151,7 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/Avila_Johnny_Resume (8).pdf "
+                  href="/Avila_Johnny_Resume_.pdf "
                   target={"_blank"}
                   className={`flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark border-2`}
                   download={true}
