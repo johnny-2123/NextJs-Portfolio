@@ -54,7 +54,7 @@ export default function Home() {
                 </h1>
                 <TrendingDown size={100} />
                 <Project
-                  title={"AI powered content creator tools"}
+                  title={"AI Tool Aggregator"}
                   summary={`Aggregator site for AI-Powered Tools for Content Creators`}
                   link={`https://aitoolaggregator-johnny-2123.vercel.app/`}
                   github={`https://github.com/johnny-2123/AI-Tool-Aggregator-Site`}
