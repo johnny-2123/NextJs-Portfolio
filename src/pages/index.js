@@ -21,6 +21,7 @@ import {
   CornerDownRight,
   MoveDownRight,
   TrendingDown,
+  ArrowDownCircle,
 } from "lucide-react";
 
 export default function Home() {
@@ -39,8 +40,17 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <div className="flex flex-row items-center justify-around mb-10 md:flex-col md:justify-items-center">
-                <h1 class="w-2/5 bg-gradient-to-tr from-sky-950 to-sky-600 bg-clip-text font-sans text-3xl font-bold leading-tight tracking-normal text-transparent antialiased text-right md:w-full md:text-center">
+                {/* <h1 class="w-2/5 bg-gradient-to-tr from-sky-950 to-sky-600 bg-clip-text font-sans text-3xl font-bold leading-tight tracking-normal text-transparent antialiased text-right md:w-full md:text-center">
                   {`Currently learning Next.js 14, Prisma, and NextAuth by working on`}
+                </h1> */}
+                <h1 class="w-2/5 text-4xl font-extrabold leading-none tracking-tight text-right md:w-full md:text-center">
+                  Currently learning{" "}
+                  <span class="text-fuchsia-700">Next.js 14,</span>{" "}
+                  <span class="text-fuchsia-800">Prisma,</span> <span>and</span>{" "}
+                  <span class="text-fuchsia-900 dark:text-blue-500">
+                    NextAuth
+                  </span>{" "}
+                  by working on
                 </h1>
                 <TrendingDown size={100} />
                 <Project
@@ -52,6 +62,12 @@ export default function Home() {
                   img={aiToolsForContentCreators}
                 />
               </div>
+              <h1 class="mb-10 mt-15 md:mt-20 text-6xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl sm:text-4xl text-center dark:text-white">
+                <span class="underline underline-offset-3 decoration-8 decoration-primary">
+                  Projects
+                </span>{" "}
+              </h1>
+              <ArrowDownCircle size={100} className="mx-auto mb-10" />
               <FeaturedProject
                 title={"Wavelength"}
                 summary={`Wavelength is real-time multiplayer word association game. Built with Node.js, PostgreSQL, React, Redux, and WebSockets, Wavelength allows users to create, join, and manage games and friend relationships. It offers real-time gameplay, game history, friend requests, and various interactive features.`}
