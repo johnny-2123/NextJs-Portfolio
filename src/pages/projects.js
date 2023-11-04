@@ -57,9 +57,9 @@ const FeaturedProject = ({ type, title, summary, img, link, github }) => {
   );
 };
 
-const Project = ({ title, type, img, link, github, summary }) => {
+export const Project = ({ title, type, img, link, github, summary }) => {
   return (
-    <article className="w-full flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative xs:p-4">
+    <article className="w-1/3 flex flex-col items-center justify-center rounded-2xl border border-solid border-dark bg-light p-6 relative xs:p-4 md:w-full">
       <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[102%] rounded-[2rem] bg-dark rounded-br-3xl dark:bg-light md:-right-3 md:w-[101%] sm:h-[102%] xs:rounded-[1.5rem] "></div>
       <Link
         href={link}
@@ -77,17 +77,18 @@ const Project = ({ title, type, img, link, github, summary }) => {
           target={"_blank"}
           className="hover:underline underline-offset-[.2rem]"
         >
-          <h2 className="my-2 w-full text-left text-3xl font-bold lg:text-2xl ">
+          <h2 className="my-1 w-full text-left text-lg font-bold lg:text-2xl ">
             {title}
           </h2>
         </Link>
-        <p className="my-2 ">{summary}</p>
+        <p className="my-1 ">{summary}</p>
         <div className="mt-2 flex items-center">
           <Link href={github} target={"_blank"} className="w-8 md:w-6">
             <GithubIcon />
           </Link>
           <Link
             href={link}
+            target={"_blank"}
             className="ml-4 rounded-lg  text-lg font-semibold underline underline-offset-[.2rem] md:text-base"
           >
             Live Site

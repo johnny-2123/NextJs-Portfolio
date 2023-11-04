@@ -3,7 +3,7 @@ import Link from "next/link";
 import Head from "next/head";
 import Image from "next/image";
 import Layout from "@/components/Layout";
-import { J, LinkArrow } from "@/components/Icons";
+import { J } from "@/components/Icons";
 import AnimatedText from "@/components/AnimatedText";
 import HireMe from "@/components/HireMe";
 import lightBulb from "../../public/images/svgs/miscellaneous_icons_1.svg";
@@ -12,53 +12,16 @@ import slack from "../../public/images/projects/slack_clone_cover.png";
 import crim_search from "../../public/images/projects/crim_search_cover.png";
 import meetup from "../../public/images/projects/meetup_cover.png";
 import quoted from "../../public/images/projects/Quoted_Cover.png";
+import aiToolsForContentCreators from "../../public/images/projects/ai_tools_for_content_creators.png";
 import { GithubIcon } from "@/components/Icons";
-
-const FeaturedProject = ({ type, title, summary, img, link, github }) => {
-  return (
-    <article className="w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative  lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 ">
-      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]"></div>
-      <Link
-        href={link}
-        target={"_blank"}
-        className="w-3/5 cursor-pointer overflow-hidden rounded-xl lg:w-full"
-      >
-        <Image
-          src={img}
-          alt={title}
-          className="w-full h-auto"
-          priority={true}
-          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
-        />
-      </Link>
-      <div className="w-2/5 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
-        {/* <span className="text-primary font-medium text-xl">{type}</span> */}
-        <Link
-          href={link}
-          target={"_blank"}
-          className="hover:underline underline-offset-[.2rem]"
-        >
-          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-md">
-            {title}
-          </h2>
-        </Link>
-        <p className="my-2 sm:text-sm">{summary}</p>
-        <div className="mt-2 flex items-center">
-          <Link href={github} target={"_blank"} className="w-10">
-            <GithubIcon />
-          </Link>
-          <Link
-            href={link}
-            target={"_blank"}
-            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-large font-semibold sm:px-4 sm:text-base"
-          >
-            Live Site
-          </Link>
-        </div>
-      </div>
-    </article>
-  );
-};
+import { Download } from "lucide-react";
+import { Project } from "@/pages/projects";
+import {
+  ArrowBigRightDash,
+  CornerDownRight,
+  MoveDownRight,
+  TrendingDown,
+} from "lucide-react";
 
 export default function Home() {
   return (
@@ -75,6 +38,20 @@ export default function Home() {
           />
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
+              <div className="flex flex-row items-center justify-around mb-10 md:flex-col md:justify-items-center">
+                <h1 class="w-2/5 bg-gradient-to-tr from-sky-950 to-sky-600 bg-clip-text font-sans text-3xl font-bold leading-tight tracking-normal text-transparent antialiased text-right md:w-full md:text-center">
+                  {`Currently learning Next.js 14, Prisma, and NextAuth by working on`}
+                </h1>
+                <TrendingDown size={100} />
+                <Project
+                  title={"AI powered content creator tools"}
+                  summary={`Aggregator site for AI-Powered Tools for Content Creators`}
+                  link={`https://aitoolaggregator-johnny-2123.vercel.app/`}
+                  github={`https://github.com/johnny-2123/AI-Tool-Aggregator-Site`}
+                  type={`(In Progress) `}
+                  img={aiToolsForContentCreators}
+                />
+              </div>
               <FeaturedProject
                 title={"Wavelength"}
                 summary={`Wavelength is real-time multiplayer word association game. Built with Node.js, PostgreSQL, React, Redux, and WebSockets, Wavelength allows users to create, join, and manage games and friend relationships. It offers real-time gameplay, game history, friend requests, and various interactive features.`}
@@ -110,7 +87,7 @@ export default function Home() {
                 summary={`A paralegal-focused Chrome Extension that optimizes criminal history chart creation, reducing time by 50%. Extracts criminal case data for MD, DC, and VA, utilizing Chrome local storage and messaging system for efficient data management.`}
                 link={`https://chrome.google.com/webstore/detail/crim-search/jofkolbgfgfpjdfcjhjefefbnidoamcd?hl=en&authuser=2`}
                 github={`https://github.com/johnny-2123/Crim-Search-Extension`}
-                type={`Feautured Project`}
+                // type={`Feautured Project`}
                 img={crim_search}
               />
             </div>
@@ -120,7 +97,7 @@ export default function Home() {
                 summary={`This is a clone of the popular communication platform Slack. It provides a comprehensive set of features to facilitate seamless communication and collaboration within workspaces.The project's backend is built on Flask and SQLAlchemy. The project's frontend is built on React and Redux. Realtime chat message functionality is handled with SocketIO.`}
                 link={`https://aaslackcloneproject.onrender.com/`}
                 github={`https://github.com/johnny-2123/Slack_Clone`}
-                type={`Feautured Project`}
+                // type={`Feautured Project`}
                 img={slack}
               />
             </div>
@@ -151,12 +128,12 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/Avila_Johnny_Resume_.pdf "
+                  href="/Avila Johnny Resume.pdf "
                   target={"_blank"}
                   className={`flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark border-2`}
                   download={true}
                 >
-                  Resume <LinkArrow className={`w-6 ml-1`} />{" "}
+                  Resume <Download className="ml-2" />
                 </Link>
                 <Link
                   href="mailto:avila.johnny11@gmail.com"
@@ -173,6 +150,7 @@ export default function Home() {
         <div className="absolute right-8 bottom-6 inline-block w-24 md:hidden">
           <Image
             src={lightBulb}
+            alt="light bulb"
             className="w-[70%] h-auto"
             priority={true}
             sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
@@ -182,3 +160,49 @@ export default function Home() {
     </>
   );
 }
+
+const FeaturedProject = ({ type, title, summary, img, link, github }) => {
+  return (
+    <article className="w-full flex items-center justify-between rounded-3xl rounded-br-2xl border border-solid border-dark bg-light shadow-2xl p-12 relative  lg:flex-col lg:p-8 xs:rounded-2xl xs:rounded-br-3xl xs:p-4 ">
+      <div className="absolute top-0 -right-3 -z-10 w-[101%] h-[103%] rounded-[2.5rem] bg-dark rounded-br-3xl xs:-right-2 sm:h-[102%] xs:w-[100%] xs:rounded-[1.5rem]"></div>
+      <Link
+        href={link}
+        target={"_blank"}
+        className="w-3/5 cursor-pointer overflow-hidden rounded-xl lg:w-full"
+      >
+        <Image
+          src={img}
+          alt={title}
+          className="w-full h-auto"
+          priority={true}
+          sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
+        />
+      </Link>
+      <div className="w-2/5 flex flex-col items-start justify-between pl-6 lg:w-full lg:pl-0 lg:pt-6">
+        <span className="text-primary font-medium text-xl">{type}</span>
+        <Link
+          href={link}
+          target={"_blank"}
+          className="hover:underline underline-offset-[.2rem]"
+        >
+          <h2 className="my-2 w-full text-left text-4xl font-bold sm:text-md">
+            {title}
+          </h2>
+        </Link>
+        <p className="my-2 sm:text-sm">{summary}</p>
+        <div className="mt-2 flex items-center">
+          <Link href={github} target={"_blank"} className="w-10">
+            <GithubIcon />
+          </Link>
+          <Link
+            href={link}
+            target={"_blank"}
+            className="ml-4 rounded-lg bg-dark text-light p-2 px-6 text-large font-semibold sm:px-4 sm:text-base"
+          >
+            Live Site
+          </Link>
+        </div>
+      </div>
+    </article>
+  );
+};

@@ -66,10 +66,11 @@ const Experience = () => {
             company={"Wavelength"}
             companyLink={"https://wavelength-2hp9.onrender.com/"}
             work={[
+              `Real-time multiplayer word association game developed with React and Node / Express.`,
               `Developed a real-time communication system using Websockets for simultaneous gameplay and live updates.`,
-              `Implemented a relational database utilizing Sequelize as the ORM tool and PostgreSQL as the database management system.`,
+              `Implemented a relational database utilizing Sequelize as the ORM and PostgreSQL as the DBMS.`,
               `Integrated Redux for fetching data from the backend server and managing application state.`,
-              `Configured the Node.js backend to handle HTTP requests and responses for CRUD operations.`,
+              `Configured the Node.js backend infrastructure to handle HTTP requests and responses for CRUD operations.`,
             ]}
           />
           <Details
@@ -77,9 +78,19 @@ const Experience = () => {
             company={"Quoted"}
             companyLink={"https://quoted-phi.vercel.app/"}
             work={[
-              `Implemented a NoSQL database using firestore to manage user and quote data.`,
+              `Next.js powered web application that allows users to share and discover quotes.`,
+              `Implemented a NoSQL database using Firestore to manage user and quote data.`,
               `Utilized Next.js and Tailwind CSS to build a responsive UI.`,
-              "Leveraged firebase cloud storage to store user profile images.",
+              `Leveraged Firebase cloud storage to store application media files.`,
+            ]}
+          />
+          <Details
+            position={"Open Source Software Engineer"}
+            company={"Notesnook"}
+            companyLink={"https://github.com/streetwriters/notesnook"}
+            work={[
+              `Demonstrated ability to navigate and understand complex codebases by contributing to a repository with 18 contributors and over 7,000 stars.`,
+              `Implemented user privacy features for the platform’s web application developed with TypeScript and React.`,
             ]}
           />
           <Details
@@ -119,13 +130,12 @@ const Experience = () => {
             position={"Paralegal"}
             company={"CAIR Coalition"}
             companyLink={"https://www.caircoalition.org/"}
-            time={"2021-Present"}
+            time={"Sept 2021 - August 2023"}
             address={"Washington, DC"}
             work={[
-              `Support and advise on committee overseeing the organization’s transition from Salesforce to Legal Server`,
-              `Facilitate weekly team meetings with attorneys, social services coordinators, and fellow paralegals`,
-              `Participate in intake reviews, conduct legal research, and prepare cases for pro bono placement.`,
-              `Draft filings for various forms of immigration relief to be reviewed by attorneys.`,
+              `Supported and advised on committee overseeing the organization’s transition from Salesforce to Legal Server.`,
+              `Facilitated weekly team meetings with attorneys, social services coordinators, and fellow paralegals.`,
+              `Managed communication with clients, client advocates, expert witnesses, and other case stakeholders.`,
             ]}
           />
         </ul>
