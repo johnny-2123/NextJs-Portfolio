@@ -43,7 +43,7 @@ export default function Home() {
                 {/* <h1 class="w-2/5 bg-gradient-to-tr from-sky-950 to-sky-600 bg-clip-text font-sans text-3xl font-bold leading-tight tracking-normal text-transparent antialiased text-right md:w-full md:text-center">
                   {`Currently learning Next.js 14, Prisma, and NextAuth by working on`}
                 </h1> */}
-                <h1 class="w-2/5 text-4xl font-extrabold leading-none tracking-tight text-right md:w-full md:text-center">
+                <h1 class="w-2/5 text-4xl font-extrabold leading-none tracking-tight text-right md:w-full md:text-center md:mt-20 md:mb-8">
                   Currently learning{" "}
                   <span class="text-fuchsia-700">Next.js 14,</span>{" "}
                   <span class="text-fuchsia-800">Prisma,</span> <span>and</span>{" "}
@@ -52,7 +52,7 @@ export default function Home() {
                   </span>{" "}
                   by working on
                 </h1>
-                <TrendingDown size={100} />
+                <TrendingDown size={100} className="md:mb-[3rem]" />
                 <Project
                   title={"AI Tool Aggregator"}
                   summary={`Aggregator site for AI-Powered Tools for Content Creators`}
@@ -62,12 +62,12 @@ export default function Home() {
                   img={aiToolsForContentCreators}
                 />
               </div>
-              <h1 class="mb-10 mt-15 md:mt-20 text-6xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl sm:text-4xl text-center dark:text-white">
+              <h1 class="mb-16 mt-20 md:mt-16 text-6xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl sm:text-4xl text-center dark:text-white">
                 <span class="underline underline-offset-3 decoration-8 decoration-primary">
                   Projects
                 </span>{" "}
               </h1>
-              <ArrowDownCircle size={100} className="mx-auto mb-10" />
+              <ArrowDownCircle size={100} className="mx-auto mb-16" />
               <FeaturedProject
                 title={"Wavelength"}
                 summary={`Wavelength is real-time multiplayer word association game. Built with Node.js, PostgreSQL, React, Redux, and WebSockets, Wavelength allows users to create, join, and manage games and friend relationships. It offers real-time gameplay, game history, friend requests, and various interactive features.`}
