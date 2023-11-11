@@ -83,8 +83,6 @@ const NavBar = () => {
         <nav>
           <CustomLink href="/" title="Home" className="mr-4" />
           <CustomLink href="/about" title="About" className="mx-4" />
-          {/* <CustomLink href="/projects" title="Projects" className="mx-4" /> */}
-          {/* <CustomLink href="/contact" title="Contact" className="ml-4" /> */}
         </nav>
         <nav className="flex items-center justify-center flex-wrap">
           <motion.a
@@ -96,15 +94,6 @@ const NavBar = () => {
           >
             <GithubIcon />{" "}
           </motion.a>
-          {/* <motion.a
-            href="/"
-            target={"_blank"}
-            whileHover={{ y: -2 }}
-            whileTap={{ scale: 0.9 }}
-            className="w-6 mx-3"
-          >
-            <DribbbleIcon />{" "}
-          </motion.a> */}
         </nav>
       </div>
 
@@ -128,12 +117,6 @@ const NavBar = () => {
               className=""
               toggle={handleClick}
             />
-            {/* <CustomMobileLink
-              href="/projects"
-              title="Projects"
-              className=""
-              toggle={handleClick}
-            /> */}
           </nav>
           <nav className="flex items-center justify-center flex-wrap mt-2">
             <motion.a
