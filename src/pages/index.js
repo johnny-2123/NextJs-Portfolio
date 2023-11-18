@@ -58,9 +58,9 @@ export default function Home() {
               </p>
               <div className="flex items-center self-start mt-2 lg:self-center">
                 <Link
-                  href="/Avila Johnny Resume.pdf "
+                  href="/Avila_Johnny_Resume_.pdf "
                   target={"_blank"}
-                  className={`flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border border-solid border-transparent hover:border-dark border-2`}
+                  className={`flex items-center bg-dark text-light p-2.5 px-6 rounded-lg text-lg font-semibold hover:bg-light hover:text-dark border-solid border-transparent hover:border-dark border-2`}
                   download={true}
                 >
                   Resume <Download className="ml-2" />
@@ -106,14 +106,12 @@ export default function Home() {
           <div className="grid grid-cols-12 gap-24 gap-y-32 xl:gap-x-16 lg:gap-x-8 md:gap-y-24 sm:gap-x-0">
             <div className="col-span-12">
               <div className="flex flex-row items-center justify-around mb-10 md:flex-col md:justify-items-center">
-                {/* <h1 class="w-2/5 bg-gradient-to-tr from-sky-950 to-sky-600 bg-clip-text font-sans text-3xl font-bold leading-tight tracking-normal text-transparent antialiased text-right md:w-full md:text-center">
-                  {`Currently learning Next.js 14, Prisma, and NextAuth by working on`}
-                </h1> */}
-                <h1 class="w-2/5 text-4xl font-extrabold leading-none tracking-tight text-right md:w-full md:text-center md:mt-20 md:mb-8">
+                <h1 className="w-2/5 text-4xl font-extrabold leading-none tracking-tight text-right md:w-full md:text-center md:mt-20 md:mb-8">
                   Currently learning{" "}
-                  <span class="text-fuchsia-700">Next.js 14,</span>{" "}
-                  <span class="text-fuchsia-800">Prisma,</span> <span>and</span>{" "}
-                  <span class="text-fuchsia-900 dark:text-blue-500">
+                  <span className="text-fuchsia-700">Next.js 14,</span>{" "}
+                  <span className="text-fuchsia-800">Prisma,</span>{" "}
+                  <span>and</span>{" "}
+                  <span className="text-fuchsia-900 dark:text-blue-500">
                     NextAuth
                   </span>{" "}
                   by working on
@@ -128,8 +126,8 @@ export default function Home() {
                   img={aiToolsForContentCreators}
                 />
               </div>
-              <h1 class="mb-5 mt-20 md:mt-16 text-6xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl sm:text-4xl text-center dark:text-white">
-                <span class="underline underline-offset-3 decoration-8 decoration-primary">
+              <h1 className="mb-5 mt-20 md:mt-16 text-6xl font-extrabold leading-none tracking-tight text-gray-900 md:text-5xl sm:text-4xl text-center dark:text-white">
+                <span className="underline underline-offset-3 decoration-8 decoration-primary">
                   Projects
                 </span>{" "}
               </h1>

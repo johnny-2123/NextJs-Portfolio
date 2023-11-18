@@ -35,16 +35,15 @@ const About = () => {
                 extensions.
               </p>
               <p className="mb-4 font-medium">
-                Leveraging my background in political science and a passion for
-                technology, I approach every project with a unique perspective.
-                My journey from a paralegal to a software engineer showcases my
-                adaptability and readiness to embrace new challenges in the
-                digital sphere.
+                Leveraging a growth mindset and a passion for technology, I
+                approach every project with a unique perspective. My diverse
+                skillset showcases my adaptability and readiness to embrace new
+                challenges in the digital sphere.
               </p>
               <p className="font-medium">
-                I&apos;m excited to bring my dynamic skill set to your next
-                project, pushing the boundaries of what&apos;s possible, and
-                bringing your vision to life.
+                I&apos;m excited to bring my perspective and technical abilities
+                to your next project, pushing the boundaries of what&apos;s
+                possible, and bringing your vision to life.
               </p>
             </div>
 

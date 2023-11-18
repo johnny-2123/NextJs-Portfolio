@@ -55,9 +55,9 @@ const Experience = () => {
   const experienceData = [
     {
       position: "Software Engineer Intern",
-      company: "Managers Club",
+      company: "The VDG Group",
       time: "Fall 2023",
-      href: "https://managersclub.com/",
+      href: "https://www.vdggroup.com/",
       work: [
         "Migrating high traffic blog from WordPress to NextJS, enhancing site performance and scalability using NextJS server side rendering and static generation along with React Server Components.",
         "Developing a robust user authentication and authorization system, allowing users to securely sign up and sign in via Google, GitHub, Facebook, or passwordless email.",
