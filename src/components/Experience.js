@@ -14,7 +14,7 @@ const ExperienceItem = ({
   const ref = useRef(null);
 
   const resumeBullets = work.map((bullet, index) => (
-    <li key={index} className="font-medium list-disc pl-4">
+    <li key={index} className="pl-4 font-medium list-disc">
       {bullet}
     </li>
   ));
@@ -22,7 +22,7 @@ const ExperienceItem = ({
   return (
     <li
       ref={ref}
-      className="my-8 first:mt-0 last:mb-0 w-4/5 mx-auto flex flex-col items-start justify-between"
+      className="flex flex-col items-start justify-between w-4/5 mx-auto my-8 first:mt-0 last:mb-0"
     >
       <LiIcon reference={ref} />
       <motion.div
@@ -30,16 +30,16 @@ const ExperienceItem = ({
         whileInView={{ y: 0 }}
         transition={{ duration: 0.5, type: "spring" }}
       >
-        <h3 className="capitalize font-bold text-2xl w-full ml-3">
+        <h3 className="w-full ml-3 text-2xl font-bold capitalize">
           {position}&nbsp;
-          <a href={href} target="_blank" className="text-primary capitalize">
+          <a href={href} target="_blank" className="capitalize text-primary">
             @{company}
           </a>
         </h3>
-        <span className="capitalize font-medium text-dark/75 ml-3">
+        <span className="ml-3 font-medium capitalize text-dark/75">
           {address && `${time} | ${address}`}
         </span>
-        <ul className="font-medium w-full ml-8 mt-2">{resumeBullets}</ul>
+        <ul className="w-full mt-2 ml-8 font-medium">{resumeBullets}</ul>
       </motion.div>
     </li>
   );
@@ -54,15 +54,15 @@ const Experience = () => {
 
   const experienceData = [
     {
-      position: "Software Engineer Intern",
+      position: "Software Developer",
       company: "The VDG Group",
       time: "Fall 2023",
-      href: "https://www.vdggroup.com/",
+      href: "https://www.interviewigniter.com/",
       work: [
-        "Migrating high traffic blog from WordPress to NextJS, enhancing site performance and scalability using NextJS server side rendering and static generation along with React Server Components.",
-        "Developing a robust user authentication and authorization system, allowing users to securely sign up and sign in via Google, GitHub, Facebook, or passwordless email.",
-        "Architecting a headless CMS solution by integrating content from Strapi, allowing for content editing, post scheduling, and management.",
-        "Implementing responsive UI using TailwindCSS and Shadcn/UI, resulting in a clean and user-friendly design.",
+        "Leveraged Vercel AI SDK to develop coding interview practice platform with live evaluation and feedback.",
+        "Developed a robust user authentication and authorization system, allowing users to securely sign up and sign in via Google, GitHub, Facebook, or passwordless email.",
+        "Architected a headless CMS solution by integrating content from Strapi, allowing for content editing, post scheduling, and management.",
+        "Migrated high traffic blog from WordPress to NextJS, enhancing site performance and scalability using NextJS server side rendering and static generation along with React Server Components.",
       ],
     },
     {
@@ -149,7 +149,7 @@ const Experience = () => {
 
   return (
     <div className="my-[10rem]">
-      <h2 className="font-bold text-8xl sm:text-5xl mb-32 w-full text-center">
+      <h2 className="w-full mb-32 font-bold text-center text-8xl sm:text-5xl">
         Experience
       </h2>
       <div ref={ref} className="w-[100%] mx-auto relative">
@@ -157,7 +157,7 @@ const Experience = () => {
           style={{ scaleY: scrollYProgress }}
           className="absolute left-9 top-0 w-[4px] h-full bg-dark origin-top"
         />
-        <ul className="w-full flex flex-col items-start justify-between ml-4">
+        <ul className="flex flex-col items-start justify-between w-full ml-4">
           {experienceData.map((experience, index) => (
             <ExperienceItem key={index} {...experience} />
           ))}
