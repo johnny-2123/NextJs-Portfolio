@@ -13,7 +13,7 @@ import slack from "../../public/images/projects/slack_clone_cover.png";
 import crim_search from "../../public/images/projects/crim_search_cover.png";
 import meetup from "../../public/images/projects/meetup_cover.png";
 import quoted from "../../public/images/projects/Quoted_Cover.png";
-import aiToolsForContentCreators from "../../public/images/projects/ai_tools_for_content_creators.png";
+import interviewIgnitor from "../../public/images/projects/interview_ignitor.png";
 import { GithubIcon } from "@/components/Icons";
 import { Download } from "lucide-react";
 import { Project } from "@/pages/projects";
@@ -107,7 +107,7 @@ export default function Home() {
             <div className="col-span-12">
               <div className="flex flex-row items-center justify-around mb-10 md:flex-col md:justify-items-center">
                 <h1 className="w-2/5 text-4xl font-extrabold leading-none tracking-tight text-right md:w-full md:text-center md:mt-20 md:mb-8">
-                  Currently learning{" "}
+                  Currently developing with{" "}
                   <span className="text-fuchsia-700">Next.js 14,</span>{" "}
                   <span className="text-fuchsia-800">Prisma,</span>{" "}
                   <span>and</span>{" "}
@@ -118,12 +118,12 @@ export default function Home() {
                 </h1>
                 <TrendingDown size={100} className="md:mb-[3rem]" />
                 <Project
-                  title={"AI Tool Aggregator"}
-                  summary={`Aggregator site for AI-Powered Tools for Content Creators`}
-                  link={`https://aitoolaggregator-johnny-2123.vercel.app/`}
-                  github={`https://github.com/johnny-2123/AI-Tool-Aggregator-Site`}
-                  type={`(In Progress) `}
-                  img={aiToolsForContentCreators}
+                  title={"Interview Igniter"}
+                  summary={`Collection of AI-based practice tools designed to help job seekers excel in interviews.`}
+                  link={`https://www.interviewigniter.com/`}
+                  github={`https://github.com/johnny-2123`}
+                  type={`Contract Work`}
+                  img={interviewIgnitor}
                 />
               </div>
               <h1 className="mt-20 mb-5 text-6xl font-extrabold leading-none tracking-tight text-center text-gray-900 md:mt-16 md:text-5xl sm:text-4xl dark:text-white">
