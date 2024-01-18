@@ -2,7 +2,7 @@ import React, { useRef } from "react";
 import { motion, useScroll } from "framer-motion";
 import LiIcon from "./LiIcon";
 
-const ExperienceItem = ({
+export const ExperienceItem = ({
   position,
   company,
   companyLink,
@@ -59,10 +59,11 @@ const Experience = () => {
       time: "Fall 2023",
       href: "https://www.interviewigniter.com/",
       work: [
-        "Leveraged Vercel AI SDK to develop coding interview practice platform with live evaluation and feedback.",
+        "Leveraged Vercel AI SDK to develop interactive coding interview practice platform with live evaluation and feedback.",
+        "Built reusable, responsive, and optimized client and server components using React for complex user flows.",
+        "Migrated site from Wordpress to NextJS, enhancing performance and scalability with SSR and SSG. ",
         "Developed a robust user authentication and authorization system, allowing users to securely sign up and sign in via Google, GitHub, Facebook, or passwordless email.",
         "Architected a headless CMS solution by integrating content from Strapi, allowing for content editing, post scheduling, and management.",
-        "Migrated high traffic blog from WordPress to NextJS, enhancing site performance and scalability using NextJS server side rendering and static generation along with React Server Components.",
       ],
     },
     {
@@ -71,8 +72,7 @@ const Experience = () => {
       time: "Summer 2023",
       href: "https://notesnook.com",
       work: [
-        "Implemented user privacy feature for the platform’s web application developed with TypeScript and React.",
-        "Demonstrated ability to navigate and understand complex codebases by contributing to a github repository featuring 18 contributors and over 7,000 stars.",
+        "Implemented frontend user privacy feature for the platform’s web application developed with TypeScript and React.",
       ],
     },
     {
@@ -82,28 +82,26 @@ const Experience = () => {
       href: "https://wavelength-2hp9.onrender.com/",
       work: [
         "Real-time multiplayer word association game developed with React and Node / Express.",
-        "Developed a real-time communication system using Websockets for simultaneous gameplay and live updates.",
+        "Developed real-time communication system using Websocket for simultaneous gameplay and live updates.",
+        "Built reusable functional components with React to handle user input and display gameplay data - utilizing Redux for state management.",
         "Implemented a relational database utilizing Sequelize as the ORM and PostgreSQL as the DBMS.",
-        "Integrated Redux for fetching data from the backend server and managing application state.",
         "Configured the Node.js backend infrastructure to handle HTTP requests and responses for CRUD operations.",
       ],
     },
     {
       position: "Software Engineering Project",
       company: "Quoted",
-      time: "Your Time",
       href: "https://quoted-phi.vercel.app/",
       work: [
         "Next.js powered web application that allows users to share and discover quotes.",
+        "Utilized React and Tailwind to build a responsive, accessible, and cross-browser compatible user interface.",
+        "Developed reusable React hooks to efficiently handle data flow between front-end and back-end systems.",
         "Implemented a NoSQL database using Firestore to manage user and quote data.",
-        "Utilized Next.js and Tailwind CSS to build a responsive UI.",
-        "Leveraged Firebase cloud storage to store application media files.",
       ],
     },
     {
       position: "Software Engineering Project",
       company: "Meetup Clone",
-      time: "Your Time",
       href: "https://meetupclone-ndtq.onrender.com/",
       work: [
         "Developed RESTful APIs using Node.js and Express.js.",
@@ -114,7 +112,6 @@ const Experience = () => {
     {
       position: "Software Engineering Project",
       company: "Crim Search",
-      time: "Your Time",
       href: "https://chromewebstore.google.com/detail/crim-search/jofkolbgfgfpjdfcjhjefefbnidoamcd",
       work: [
         "Leveraged JavaScript, HTML, and CSS to enable users to extract data criminal case data for MD, DC, and VA.",
@@ -125,7 +122,6 @@ const Experience = () => {
     {
       position: "Software Engineering Project",
       company: "Slack Clone",
-      time: "Your Time",
       href: "https://aaslackcloneproject.onrender.com/",
       work: [
         "DRY'ed up backend code by using polymorphic inheritance for channels and direct messages.",
@@ -136,7 +132,6 @@ const Experience = () => {
     {
       position: "Paralegal",
       company: "CAIR Coalition",
-      time: "Sept 2021 - August 2023",
       address: "Washington, DC",
       href: "https://www.caircoalition.org/",
       work: [
